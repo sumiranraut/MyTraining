@@ -53,7 +53,7 @@ public class LoginTest {
 
 		throw new cucumber.api.PendingException();
 	}
-	@When("^i enter \"([^\"]*)\" and \"([^\"]*)\"$")
+	@When("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void enterusernamepassword(String username,String password)
 	{
 		po.signin.click();

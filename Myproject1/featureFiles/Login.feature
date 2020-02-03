@@ -12,7 +12,9 @@ Scenario:
 		|Travel|
 		|Laptop|
 	Then product should be added in the cart if available
-	
+
+
+@user-specific	
 Scenario Outline: Login with valid credentials 
 	Given Navigate to Home Page 
 	When user enters "<username>" and "<password>" 

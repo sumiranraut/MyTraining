@@ -7,7 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="featureFiles",
-glue= {"stepDefinition"}, tags="@data-driven")
+glue= {"stepDefinition"}, 
+tags="@user-specific",
+plugin= {"pretty","json:target/cucumber.json"})
 public class LoginRunner {
          
           
